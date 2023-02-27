@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function findElement(arr, n, key){
+            let i;
+            for(i=0; i<n; i++){
+                if(arr[i] == key){
+                    return i;
+                }  
+            }
+            return -1;
+        }
+
+        let arr =  [12, 34, 10, 6, 40];
+        let n = arr.length;
+        let key = 34;
+        console.log(n);
+
+        let position = findElement(arr, n, key);
+        if(position == -1){
+            console.log('Item not found');
+        } else{
+            console.log('Item found at position: '+ (position+1)); 
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    <h2>Search a given element within an unsorted array</h2>
+</body>
+</html>
